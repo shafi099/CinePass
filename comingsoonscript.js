@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const submit=document.getElementById("submit");
     const moviesubmit= document.getElementById("inputmoviesubmit")
     const nowshowing= document.getElementById("nowshowing")
-
+    const adipurush = document.getElementById("adipurush")
 
     citybtns.forEach(btn => {
       btn.onclick = () => {
@@ -39,10 +39,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     }
 
-/*    nowshowing.onclick = () => {
-      moviehead.scrollIntoView({behavior: "smooth"});
-      location.reload();
+
+   /* adipurush.onlick= () => {
+      var bookingbox = document.getElementById("bookingbox");
+      bookingbox.innerHTML="hiiii";
     }*/
+    nowshowing.onclick = () => {
+      moviehead.scrollIntoView({behavior: "smooth"});
+      window.location.replace("index.html")
+
 
 /*    function moviesection() {
       var section = document.getElementById("bookingbox");
