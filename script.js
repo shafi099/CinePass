@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         //var section = document.getElementById("toggles")
         moviehead.scrollIntoView({behavior: "smooth"});
         usesearch.innerText=""
-        bookingbox.innerHTML= `<div style="padding:200px 12px 200px 12px;"><p> '${movieinput}' is not found</p><p>To view the list of movies being screened in your city, please click on the "Now Showing" tab.</p> </div>`;
+        bookingbox.innerHTML= `<div style="padding:100px 12px 100px 12px;color:#f2f2f2;font-family:quicksand;"><p> '${movieinput}' is not found!</p><p>To view the list of movies being screened in your city, please click on the "Now Showing" tab.</p> </div>`;
       }
     }
 
