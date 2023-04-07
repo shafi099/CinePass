@@ -1,0 +1,675 @@
+body{
+    background-color: #2e2e2e;
+    margin: 0px;
+  }
+  input {
+    font-family: 'Share Tech Mono', monospace;
+    font-size:14px;
+  }
+  .upper{
+    background-image: url("aboutboxbg.jpg");
+    background-position: left top;
+    background-size: 150%;
+  }
+  .topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color:transparent;
+    margin-top: 0px;
+    height: 62px;
+    width: 100%;
+    gap: 36px;
+  }
+  
+  .cinepass{
+   
+    justify-content: center;
+    align-items: middle;
+    text-align: center;
+  }
+  .icon{
+    height:20.94px;
+    width:41.22px;
+    padding-left:px;
+  }
+  /*.cinepasstextbox{
+    gap:0px;
+  }
+  .cinepasstextCP{
+    font-family: "Holtwood One SC"; 
+    font-size: 24px; 
+    font-style: italic; 
+    font-variant:small-caps;
+    font-weight: 50;
+    line-height: 26.4px;
+    color:#a72815;
+  }*/
+  .cinepasstext{
+    font-family: "Holtwood One SC"; 
+    font-size: 24px; 
+    font-style: italic; 
+    font-variant:small-caps;
+    font-weight: 50;
+    line-height: 26.4px;
+    color: white;
+    text-shadow: 1px 1px 0px #d9b138;
+  }
+  .inputbox{
+  
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .topnav input{
+    border:none;
+    background:#f2f2f2;
+    
+    padding-left:24px;
+    border-radius: 3px 0px 0px 3px;
+    outline:none;
+  }
+  .topnav input::placeholder{
+    color:grey;
+    font-family: Quicksand;
+    font-size: 14px; font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 23px; 
+  }
+  .inputbox button{
+ 
+    color:grey;
+    border:none;
+    font-family: Quicksand;
+    font-size: 14px; font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 23px;
+    border-radius: 0px 3px 3px 0px;
+  }
+  .inputbox button:hover {
+    background-color: #a72815;
+    color: white;
+  }
+  .inputbox input:hover {
+    box-shadow: 0 0 6px rgba(33,33,33,.2); 
+  }
+  .contactbox{
+    
+    justify-content: center;
+    text-align: center;
+  }
+  .contactbox a{
+    padding-right:26px;
+    text-decoration: none;
+    color:white;
+    font-family: Quicksand;
+    font-size: 14px; font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 23px; 
+  }
+  .contactbox a:hover{
+    text-decoration: underline;
+  }
+  .aboutbox{
+    background-color: transparent;
+    text-align: left;
+    padding: 0px 150px 18px 60px;
+  }
+  .createdtext{
+    color: #f2f2f2;
+    font-family: "Holtwood One SC"; 
+    font-size: 20px; 
+    font-weight: lighter;
+    font-style: italic; 
+    font-variant:small-caps;
+    text-shadow: 1px 1px 0px #6474cc;
+  }
+  .aboutboxtext{
+    font-family: 'Share Tech Mono', monospace;
+    color:#f2f2f2;
+    font-size: 14px;
+  }
+.aboutbox img{
+  height:25px;
+  width:25px;
+  padding-right:12px;
+}
+.aboutbox img:hover{
+  height:27px;
+  width:27px;
+  transition: 0.2s;
+}
+
+.citybox{
+  margin-top: 16px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center ;
+}
+.searchinptbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center ;
+}
+.citybox input{
+  border:none;
+  background:#f2f2f2;
+  width:220px;
+  padding:3px 6px 3px 6px;
+  border-radius: 3px 0px 0px 3px;
+  outline:none;
+}
+.citybox input:hover {
+  box-shadow: 0 0 6px rgba(33,33,33,.2); 
+}
+.citybox input::placeholder{
+  color:grey;
+  font-family: Quicksand;
+  font-size: 12px; font-style: normal;
+  font-variant: normal;
+  font-weight: 400;text-align: center ;
+}
+.submitt{    
+  padding:3px 6px 3px 6px;
+  height:21px;
+  color:grey;
+  border:none;
+  font-family: Quicksand;
+  font-size: 12px; 
+  border-radius: 0px 3px 3px 0px;
+}
+.citybtn{
+  margin:0px 3px 0px 3px;
+  padding: 2px 6px 2px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-family: quicksand;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  background: #f2f2f2; 
+  color: black; 
+  border: 1px solid white;
+  border-radius:5px
+}
+.citybox button:hover {
+  background-color: #a72815;
+  color: white;
+}
+.citylisttext{
+  padding:0px 10px 24px 10px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size:12px;
+  color:grey;
+}
+
+.moviehead{
+  font-family: 'Share Tech Mono', monospace;
+  font-weight:normal;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+
+hr{
+  width:50px;
+  border-color: #a72815;
+  border-width: 1px;
+  margin-top: 3px;;
+}
+.toggles{
+  display: flex;
+  justify-content: center;
+  align-items: middle;
+}
+.toggle {
+  background-color: #a72815; /* Green */
+  border: none;
+  color: white;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Share Tech Mono', monospace;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.nowshow {
+  background: #a72815; 
+  color: white; 
+  border: 2px solid #a72815;border-radius:10px 0px 0px 10px;
+}
+
+
+.comingsoon{
+  background: #f2f2f2;
+  color:#a72815;
+  
+  border-radius:0px 10px 10px 0px;
+}
+.comingsoon:hover {
+  border-color: #f2f2f2;
+  background-color: #a72815;
+  color: white;
+}
+ 
+.bookingbox{
+  margin: 18px 12px 18px 12px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  display:flex;
+  flex-wrap: wrap;
+  gap:36px;
+  justify-content: center;
+}
+
+.booking a{
+  text-decoration: none;
+}
+.box1{
+  width:172px;
+  height:310px;
+  background-color: #f2f2f2;
+  display: grid;
+  justify-content: center;
+  align-items: middle;
+  text-align: center;
+  border-radius:6px;
+}
+.box1:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.box1 img{
+  height:216.666667px;
+  width: 166.666667px;
+  border-radius:6px;
+  padding-top:2px;
+}
+.movietitle{
+  font-family:'Prompt', sans-serif;
+  font-size: 600;
+  font-size: 12px;
+  color:#363636;
+}
+.movieruntime{
+  padding-top: 0px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 300;
+  color:#363636;
+  font-size: 12px;
+}
+.booknow{
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.2s;
+  border-radius: 6%;
+  font-family: 'Share Tech Mono', monospace;
+ 
+}
+.booknow:hover {
+  background-color: #a72815;
+  color: white;
+}
+.usesearch{
+  font-size: 10px;
+  font-family: 'Share Tech Mono', monospace;
+  text-align:center;
+  padding-top:24px;
+  color:grey;
+}
+
+.footer{
+  display: inline-block;
+  height:100%;
+  width:100%;
+  background-color: #a72815;
+  text-align:center;
+  font-family: ;
+}
+.footer p{
+  padding-top:24px;
+}
+.footer a{
+  font-size: 18px;
+  font-family: 'Share Tech Mono', monospace;
+  text-decoration: none;
+  color:white;
+  padding-right:24px;
+}
+.footer img{
+  height:25px;
+  width:25px;
+  filter: brightness(100%) saturate(0%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+.footer img:hover{
+  height:29px;
+  width:29px;
+  transition: 0.5s;
+}
+.feedbacksection{
+  font-family: 'Share Tech Mono', monospace;
+  text-align:center;
+  padding-top:16px;
+  color:white;
+  justify-content: center;
+  gap: 0px;
+}
+.feedbacksection input{
+ margin:12px;
+  background: #831201;
+  height:100px;width:30%;
+  text-align: center;
+  border-radius: 8px 8px 8px 8px;
+  border-style: solid;
+  border-color: #fca294;
+}
+.feedbacksection input:hover{
+  box-shadow: 0 0 6px rgba(33,33,33,.2); 
+}
+.feedbacksection button{
+  height:27.29px;padding: 3px 12px 3px 12px;
+  color:grey;
+  border:none;
+  font-family: Quicksand;
+  font-size: 14px; font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
+  border-radius: 6px 6px 6px 6px;
+  margin-bottom:12px;
+}
+.feedbacksection button:hover{
+  background-color: #530b00;
+  color: white;
+}
+.footerlinks{
+  margin: 18px 180px 18px 180px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  display:flex;
+  flex-wrap: wrap;
+  gap:16px;
+  justify-content: center;
+  font-family: 'Share Tech Mono', monospace;
+  color:lightgrey;
+  font-size:16px;
+}
+.browseall{
+  width:262px;
+  height:230px;
+  background-color: #a72815;
+  display: grid;gap: 0px;
+  justify-content: center;
+  align-items: middle;
+  text-align: center;
+  border-radius:6px;
+}
+.browseall p{
+  font-size:16px;
+  text-align: center;
+}
+
+.browseall a{
+  font-size:12px;
+  text-decoration-line: underline;
+}
+
+
+
+  
+@media all and (max-width:480px){
+    body{
+    background-color: #2e2e2e;
+    margin: 0px;
+  }
+  .upper{
+    background-image: url("aboutboxbg.jpg");
+    background-position: left top;
+    background-size: 200%;
+
+  }
+  .topnav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: transparent;
+    margin-top: 0px;
+    height: 62px;
+    width: 100%;
+    gap: 1px;
+
+  }
+  .cinepass{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    padding-left:4px;
+  }
+  .icon{
+    margin:0px;
+    height:15.94px;
+    width:20.22px;
+  padding-top: 6px;;
+  }
+  /*.cinepasstextbox{
+    gap:0px;
+  }
+  .cinepasstextCP{
+    font-family: "Holtwood One SC"; 
+    font-size: 24px; 
+    font-style: italic; 
+    font-variant:small-caps;
+    font-weight: 50;
+    line-height: 26.4px;
+    color:#a72815;
+  }*/
+  .cinepasstext{
+    font-family: "Holtwood One SC"; 
+    font-size: 18px; 
+    font-style: italic; 
+    font-variant:small-caps;
+    font-weight: 50;
+    line-height: 26.4px;
+    color: white;
+    text-shadow: 1px 1px 0px #d9b138;
+
+    padding-left:0px;
+  }
+  .inputbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  
+  .topnav input{
+    border:none;
+    background:#f2f2f2;
+   width:50%;
+    padding-left:6px;
+    padding-right:4px;
+    padding-top: 0px;
+    border-radius: 3px 0px 0px 3px;
+    outline:none;
+    /* text-align: left; */
+  }
+  .topnav input::placeholder{
+    
+    color:grey;
+    font-family: Quicksand;
+    font-size: 10px; font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+  }
+  .inputbox button{
+    height:26.28px;
+    color:grey;
+    border:none;;
+    font-family: Quicksand;
+    font-size: 10px; font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    border-radius: 0px 3px 3px 0px;
+  }
+  .inputbox button:hover {
+    background-color: #6474cc;
+    color: white;
+  }
+  .inputbox input:hover {
+    box-shadow: 0 0 6px rgba(33,33,33,.2); 
+  }
+  .contactbox{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .contactbox a{
+    padding-right:6px;
+    text-decoration: none;
+    color:white;
+    font-family: Quicksand;
+    font-size: 8px; font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+  }
+  .aboutbox{
+    background-color: transparent;
+    text-align: left;
+    padding: 0px 11px 18px 11px;
+  }
+  .createdtext{
+    color: white;
+    font-family: "Holtwood One SC"; 
+    font-size: 20px; 
+    font-weight: lighter;
+    font-style: italic; 
+    font-variant:small-caps;
+    text-shadow: 1px 1px 0px #6474cc;
+  }
+  .aboutboxtext{
+    font-family: 'Share Tech Mono', monospace;
+    color:#f2f2f2;
+    font-size: 14px;
+  }
+.aboutbox img{
+  height:25px;
+  width:25px;
+  padding-right:12px;
+}
+.aboutbox img:hover{
+  height:27px;
+  width:27px;
+  transition: 0.2s;
+}
+.submitt{    
+  height:20.29px;
+  color:grey;
+  border:none;
+  font-family: Quicksand;
+  font-size: 12px; 
+  border-radius: 0px 3px 3px 0px;
+}
+
+.footer{
+  height:100%;
+  width:100%;
+  background-color: #a72815; 
+}
+
+.footer a{
+  padding-
+  font-size: 18px;
+  font-family: 'Share Tech Mono', monospace;
+  text-decoration: underline;
+  color:white;
+  padding-right:24px;
+}
+.feedbacksection{
+  font-family: 'Share Tech Mono', monospace;
+  text-align:center;
+  padding-top:16px;
+  color:white;
+  justify-content: center;
+  gap: 0px;
+}
+.feedbacksection input{
+ margin:12px;
+  background: #831201;
+  height:100px;width:60%;
+  text-align: center;
+  border-radius: 8px 8px 8px 8px;
+  border-style: solid;
+  border-color: #fca294;
+}
+.feedbacksection input:hover{
+  box-shadow: 0 0 6px rgba(33,33,33,.2); 
+}
+.feedbacksection button{
+  height:27.29px;padding: 3px 12px 3px 12px;
+  color:grey;
+  border:none;
+  font-family: Quicksand;
+  font-size: 14px; font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
+  border-radius: 6px 6px 6px 6px;
+  margin-bottom:12px;
+}
+.feedbacksection button:hover{
+  background-color: #530b00;
+  color: white;
+}
+.footerlinks{
+  text-align: center;
+  margin: 18px 180px 18px 180px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  display:grid;
+  flex-wrap: wrap;
+  gap:16px;
+  justify-content: center;
+  font-family: 'Share Tech Mono', monospace;
+  color:lightgrey;
+  font-size:16px;
+}
+.browseall{
+  width:262px;
+  height:200px;
+  background-color: #a72815;
+  display: grid;gap: 0px;
+  justify-content: center;
+  align-items: middle;
+  text-align: center;
+  border-radius:6px;
+}
+.browseall p{
+  font-size:16px;
+  text-align: center;
+}
+
+.browseall a{
+  font-size:12px;
+  text-decoration-line: underline;
+}
+
+} 
