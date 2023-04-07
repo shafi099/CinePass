@@ -1,6 +1,7 @@
 body{
     background-color: #2e2e2e;
     margin: 0px;
+    -webkit-tap-highlight-color: transparent;
   }
   input {
     font-family: 'Share Tech Mono', monospace;
@@ -15,13 +16,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: sticky;
-    top: 0px;
+    position: fixed;
+    top: 0;
+  width: 100%;
+  z-index: 9999;
     background-color:transparent;
     margin-top: 0px;
-    height: 62px;
+    height: 52px;
     width: 100%;
     gap: 36px;
+    backdrop-filter: blur(3px);
   }
   
   .cinepass{
@@ -45,7 +49,7 @@ body{
     font-variant:small-caps;
     font-weight: 50;
     line-height: 26.4px;
-    color:#a72815;
+    color:#8a1200;
   }*/
   .cinepasstext{
     font-family: "Holtwood One SC"; 
@@ -66,8 +70,7 @@ body{
   .topnav input{
     border:none;
     background:#f2f2f2;
-    
-    padding-left:24px;
+    padding:5px 24px 5px 12px;
     border-radius: 3px 0px 0px 3px;
     outline:none;
   }
@@ -91,7 +94,7 @@ body{
     border-radius: 0px 3px 3px 0px;
   }
   .inputbox button:hover {
-    background-color: #a72815;
+    background-color: #8a1200;
     color: white;
   }
   .inputbox input:hover {
@@ -118,7 +121,7 @@ body{
   .aboutbox{
     background-color: transparent;
     text-align: left;
-    padding: 0px 150px 18px 60px;
+    padding: 50px 150px 18px 60px;
   }
   .createdtext{
     color: #f2f2f2;
@@ -201,7 +204,7 @@ body{
   border-radius:5px
 }
 .citybox button:hover {
-  background-color: #a72815;
+  background-color: #8a1200;
   color: white;
 }
 .citylisttext{
@@ -221,7 +224,7 @@ body{
 
 hr{
   width:50px;
-  border-color: #a72815;
+  border-color: #8a1200;
   border-width: 1px;
   margin-top: 3px;;
 }
@@ -231,7 +234,7 @@ hr{
   align-items: middle;
 }
 .toggle {
-  background-color: #a72815; /* Green */
+  background-color: #8a1200; /* Green */
   border: none;
   color: white;
   padding: 8px;
@@ -244,21 +247,21 @@ hr{
   cursor: pointer;
 }
 .nowshow {
-  background: #a72815; 
+  background: #8a1200; 
   color: white; 
-  border: 2px solid #a72815;border-radius:10px 0px 0px 10px;
+  border: 2px solid #8a1200;border-radius:10px 0px 0px 10px;
 }
 
 
 .comingsoon{
   background: #f2f2f2;
-  color:#a72815;
+  color:#8a1200;
   
   border-radius:0px 10px 10px 0px;
 }
 .comingsoon:hover {
   border-color: #f2f2f2;
-  background-color: #a72815;
+  background-color: #8a1200;
   color: white;
 }
  
@@ -321,7 +324,7 @@ hr{
  
 }
 .booknow:hover {
-  background-color: #a72815;
+  background-color: #8a1200;
   color: white;
 }
 .usesearch{
@@ -336,7 +339,7 @@ hr{
   display: inline-block;
   height:100%;
   width:100%;
-  background-color: #a72815;
+  background-color: #8a1200;
   text-align:center;
   font-family: ;
 }
@@ -411,7 +414,7 @@ hr{
 .browseall{
   width:262px;
   height:230px;
-  background-color: #a72815;
+  background-color: #8a1200;
   display: grid;gap: 0px;
   justify-content: center;
   align-items: middle;
@@ -435,6 +438,7 @@ hr{
     body{
     background-color: #2e2e2e;
     margin: 0px;
+    -webkit-tap-highlight-color: transparent;
   }
   .upper{
     background-image: url("aboutboxbg.jpg");
@@ -450,10 +454,14 @@ hr{
     top: 0px;
     background-color: transparent;
     margin-top: 0px;
-    height: 62px;
+    height: 45px;
     width: 100%;
     gap: 1px;
-
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color:transparent;
   }
   .cinepass{
     display: flex;
@@ -478,7 +486,7 @@ hr{
     font-variant:small-caps;
     font-weight: 50;
     line-height: 26.4px;
-    color:#a72815;
+    color:#8a1200;
   }*/
   .cinepasstext{
     font-family: "Holtwood One SC"; 
@@ -520,17 +528,15 @@ hr{
     font-weight: 400;
   }
   .inputbox button{
-    height:26.28px;
+    height:20px;
     color:grey;
-    border:none;;
+    border:none;
     font-family: Quicksand;
-    font-size: 10px; font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
+    font-size: 10px; 
     border-radius: 0px 3px 3px 0px;
   }
   .inputbox button:hover {
-    background-color: #6474cc;
+    background-color: #8a1200;
     color: white;
   }
   .inputbox input:hover {
@@ -554,12 +560,12 @@ hr{
   .aboutbox{
     background-color: transparent;
     text-align: left;
-    padding: 0px 11px 18px 11px;
+    padding: 30px 11px 18px 11px;
   }
   .createdtext{
     color: white;
     font-family: "Holtwood One SC"; 
-    font-size: 20px; 
+    font-size: 18px; 
     font-weight: lighter;
     font-style: italic; 
     font-variant:small-caps;
@@ -589,10 +595,81 @@ hr{
   border-radius: 0px 3px 3px 0px;
 }
 
+
+.bookingbox{
+  margin: 18px 12px 18px 12px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  display:flex;
+  flex-wrap: wrap;
+  gap:16px;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.booking a{
+  text-decoration: none;
+}
+.box1{
+  width:162px;
+  height:300px;
+  background-color: #f2f2f2;
+  display: grid;
+  justify-content: center;
+  align-items: middle;
+  text-align: center;
+  border-radius:6px;
+}
+.box1:hover {
+  box-shadow: 0 0 11px rgba(33,33,33,.2); 
+}
+.box1 img{
+  height:206.666667px;
+  width: 156.666667px;
+  border-radius:6px;
+  padding-top:2px;
+}
+.movietitle{
+  font-family:'Prompt', sans-serif;
+  font-size: 600;
+  font-size: 12px;
+  color:#363636;
+}
+.movieruntime{
+  padding-top: 0px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 300;
+  color:#363636;
+  font-size: 12px;
+}
+.booknow{
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.2s;
+  border-radius: 6%;
+  font-family: 'Share Tech Mono', monospace;
+ 
+}
+.booknow:hover {
+  background-color: #8a1200;
+  color: white;
+}
+.usesearch{
+  font-size: 10px;
+  font-family: 'Share Tech Mono', monospace;
+  text-align:center;
+  padding-top:24px;
+  color:grey;
+}
 .footer{
   height:100%;
   width:100%;
-  background-color: #a72815; 
+  background-color: #8a1200; 
 }
 
 .footer a{
@@ -601,7 +678,6 @@ hr{
   font-family: 'Share Tech Mono', monospace;
   text-decoration: underline;
   color:white;
-  padding-right:24px;
 }
 .feedbacksection{
   font-family: 'Share Tech Mono', monospace;
@@ -655,7 +731,7 @@ hr{
 .browseall{
   width:262px;
   height:200px;
-  background-color: #a72815;
+  background-color: #8a1200;
   display: grid;gap: 0px;
   justify-content: center;
   align-items: middle;
@@ -673,3 +749,5 @@ hr{
 }
 
 } 
+
+
