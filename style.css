@@ -90,13 +90,13 @@ z-index: 9999;
   font-size: 14px; font-style: normal;
   font-variant: normal;
   font-weight: 400;
- height:24.29px;
+ height:25px;
   border-radius: 0px 3px 3px 0px;
 }
 .searchicon{
-  height:22px;
-  weight:22px;
-  opacity: 0.5;
+  height:20px;
+  width:20px;
+  opacity: 0.35;
   
 }
 .inputbox button:hover {
@@ -121,12 +121,13 @@ z-index: 9999;
   font-variant: normal;
   font-weight: 400;
   line-height: 23px; 
-
+  transition: 0.3s;
 }
 .contactbox a:hover{
-  font-size: 16px;
-  transition: 0.3s;
-  text-decoration: underline;
+  font-size: 18px;
+  font-weight: bold;
+  color:#d9b138;
+  text-decoration: none;
   
 }
 .aboutbox{
@@ -147,16 +148,17 @@ z-index: 9999;
   font-family: 'Share Tech Mono', monospace;
   color:#f2f2f2;
   font-size: 14px;
+ 
 }
 .aboutbox img{
 height:25px;
 width:25px;
 padding-right:12px;
+transition: 0.3s;
 }
 .aboutbox img:hover{
-height:27px;
-width:27px;
-transition: 0.2s;
+height:32px;
+width:32px;
 }
 
 .citybox{
@@ -199,6 +201,10 @@ font-family: Quicksand;
 font-size: 12px; 
 border-radius: 0px 3px 3px 0px;
 }
+.submitt:hover {
+  background-color: #8a1200;
+  color: white;
+  }
 .citybtn{
 margin:0px 3px 0px 3px;
 padding: 2px 6px 2px 6px;
@@ -214,10 +220,12 @@ color: black;
 border: 1px solid white;
 border-radius:5px
 }
-.citybox button:hover {
+.citybtn:hover {
 background-color: #8a1200;
 color: white;
+font-size: 15px;
 }
+
 .citylisttext{
 padding:0px 10px 24px 10px;
 font-family: 'Share Tech Mono', monospace;
@@ -281,8 +289,7 @@ color: white;
 .bookingbox{
 padding-right:15%;padding-left:15%;
 margin: 18px 12px 18px 12px;
-transition-duration: 0.2s;
-cursor: pointer;
+transition-duration: 0.3s;
 display:flex;
 flex-wrap: wrap;
 gap:36px;
@@ -335,13 +342,15 @@ text-align: center;
 font-size: 16px;
 margin: 4px 2px;
 transition: 0.2s;
-border-radius: 6%;
+border-radius: 6px;
 font-family: 'Share Tech Mono', monospace;
 
 }
 .booknow:hover {
 background-color: #8a1200;
 color: white;
+font-size: 18px;
+padding: 7px;
 }
 .usesearch{
 font-size: 10px;
@@ -372,11 +381,12 @@ padding-right:24px;
 .footer img{
 height:25px;
 width:25px;
+transition: 0.3s;
 filter: brightness(100%) saturate(0%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 .footer img:hover{
-height:29px;
-width:29px;
+height:31px;
+width:31px;
 transition: 0.5s;
 }
 .feedbacksection{
