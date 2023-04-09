@@ -472,7 +472,11 @@ text-align: center;
 .browseall a{
 font-size:12px;
 text-decoration-line: underline;
-}
+transition: 0.3s;}
+.browseall a:hover{
+  font-size:16px;
+  text-decoration-line: underline;
+  }
 
 @media all and (max-width:873px){
   
@@ -572,7 +576,7 @@ padding-top: 6px;;
   line-height: 26.4px;
   color: white;
   text-shadow: 1px 1px 0px #d9b138;
-
+  padding-right:6px;
   padding-left:0px;
 }
 .inputbox{
@@ -580,6 +584,7 @@ padding-top: 6px;;
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 102px;;
 }
 
 
@@ -587,8 +592,8 @@ padding-top: 6px;;
   border:none;
   background:#f2f2f2;
  width:42%;
-  padding-left:6px;
-  padding-right:4px;
+  /* padding-left:6px;
+  padding-right:4px; */
   padding-top: 0px;
   border-radius: 3px 0px 0px 3px;
   outline:none;
@@ -630,7 +635,7 @@ width: 50%;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-right:6px;
+  /* padding-right:6px; */
 }
 .contactbox a{
   padding-right:6px;
@@ -644,7 +649,7 @@ width: 50%;
 .contactbox a:hover{
   font-size: 12px;
   font-weight: bold;
-  color:#d9b138;
+  color:white;
   text-decoration: none;
   
 }
@@ -782,14 +787,15 @@ gap: 0px;
 .feedbacksection input{
 margin:12px;
 background: #831201;
-height:100px;width:60%;
+height:30px;width:60%;
 text-align: center;
 border-radius: 8px 8px 8px 8px;
 border-style: solid;
 border-color: #fca294;
 }
 .feedbacksection input:hover{
-box-shadow: 0 0 6px rgba(33,33,33,.2); 
+box-shadow: 0 0 6px rgba(33,33,33,.2);
+height:100px;width:60%; 
 }
 .feedbacksection button{
 height:27.29px;padding: 3px 12px 3px 12px;
