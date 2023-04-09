@@ -121,7 +121,7 @@ z-index: 9999;
   text-decoration: none;
   color:white;
   font-family: Quicksand;
-  font-size: 14px; font-style: normal;
+  font-size: 12px; font-style: normal;
   font-variant: normal;
   font-weight: 400;
   line-height: 23px; 
@@ -494,7 +494,7 @@ transition: 0.3s;}
   }
 }
 
-@media all and (max-width:507px) and (min-width:480px){
+/* @media all and (max-width:507px) and (min-width:480px){
   
   .bookingbox{
     padding-right:0px;padding-left:0px;
@@ -508,8 +508,8 @@ transition: 0.3s;}
     align-items: center;
     
     }
-  }
-@media all and (max-width:480px) {
+  } */
+@media all and (max-width:780px) {
   html{
     scroll-padding-top: 35px;
     scroll-behavior: smooth;
@@ -594,7 +594,7 @@ padding-top: 6px;;
 .topnav input{
   border:none;
   background:#f2f2f2;
- width:42%;
+ width:60%;
  height: 15px;
    padding-left:6px;
   padding-right:4px; 
@@ -628,8 +628,8 @@ width: 55%;
   color: white;
 }
 .searchicon{
-  height:16px;
-  width: 16px;;
+  height:13px;
+  width: 13px;;
 }
 .inputbox input:hover {
   box-shadow: 0 0 6px rgba(33,33,33,.2); 
@@ -646,7 +646,7 @@ width: 55%;
   text-decoration: none;
   color:white;
   font-family: Quicksand;
-  font-size: 8px; font-style: normal;
+  font-size: 7px; font-style: normal;
   font-variant: normal;
   font-weight: 400;
 }
@@ -674,6 +674,7 @@ width: 55%;
 .aboutboxtext{
   font-family: 'Share Tech Mono', monospace;
   color:#f2f2f2;
+  font-size: 10px;
   font-size: 14px;
 }
 .aboutbox img{
