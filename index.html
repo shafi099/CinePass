@@ -31,7 +31,8 @@
       <span ><img src="icon.png" alt="icon" class="icon"></span>
       <span class="cinepasstext">CinePass</span>
     </span>
-    <span class="inputbox"><input type="text" placeholder="Search Movie" class="inputbutton" id="movienameinput"><button class="submit" id="inputmoviesubmit"><img src="searchicon.png" class="searchicon" alt="searchicon"></button></span>
+    <span class="inputbox"><input type="text" placeholder="Search Movie" class="inputbutton" id="movienameinput">
+      <button class="submit" id="inputmoviesubmit"><img src="searchicon.png" class="searchicon" alt="searchicon"></button></span>
     <span class="contactbox">
       <a href="#moviehead" >Movies</a>
       <a href="#citybox" >City</a>
@@ -50,7 +51,7 @@
     You can select the date, time, and seat(s) of your choice, and the webpage automatically updates the price and total cost of your ticket(s).<br>
     <br>The webpage has a responsive design that adapts to different screen sizes, making it easy to book tickets on your desktop, laptop, tablet, or mobile device.<br>
     <br>Contact Links:
-    <p>
+    <p id="contacticon">
       <a href="mailto:shaikshafieluru@gmail.com" ><img src="gmailicon.png"></a>
        <a href="https://github.com/shafi099" ><img src="github.png"></a>
        <a href="https://www.linkedin.com/in/shaik-shafi-eluru/" ><img src="linkedin.png"></a>
@@ -80,7 +81,7 @@
     <button class="citybtn" id="Gurugram" value="Gurugram">Gurugram</button>
   </p>
   </p>
-<p class="citylisttext">Instead, you may type your city's name into the input box if it isn't listed above</p></span>
+<p class="citylisttext" id="citylisttext">Instead, you may type your city's name into the input box if it isn't listed above</p></span>
 </span>
 </div>
 <div class="moviehead" id="moviehead">M O V I E S
@@ -88,11 +89,11 @@
 </div>
 <div class="toggles" id="toggles">
   <button class="toggle nowshow" id="nowshowing" >Now Showing</button>
-  <a href="comingsoon.html"><button class="toggle comingsoon" >Coming Soon</button></a>
+  <button class="toggle comingsoon" id="comingsoon">Coming Soon</button>
 </div>
 
 <div class="usesearch" id="usesearch">**FIND YOUR FAVORITE MOVIE NAME or USE THE SEARCH BAR OR BROWSE THE OPTIONS BELOW **</div>
-
+<div id="togglemsg"></div>
 <div class="bookingbox" id="bookingbox">
   
     <div class="box1" id="rrr">
@@ -154,10 +155,10 @@
   </div>
   <div class="usesearch">**FIND YOUR FAVORITE MOVIE NAME or USE THE SEARCH BAR OR BROWSE THE OPTIONS ABOVE **</div>
 
-  <p class="createdtext" style="padding:24px 36px 24px 36px; color:black; text-align: center;"> created by shafi</p>
+  <p class="createdtext" style="padding:24px 36px 24px 36px; color:white; text-align: center;"> created by shafi</p>
   <div class="footer">
   <p>
-    <a href="shaikshafieluru@gmail.com" ><img src="gmailicon.png"></a>
+    <a href="mailto:shaikshafieluru@gmail.com" ><img src="gmailicon.png"></a>
   <a href="https://github.com/shafi099" ><img src="github.png"></a>
     <a href="www.linkedin.com/in/shaik-shafi-eluru" ><img src="linkedin.png"></a>
   <!-- <a href="#feedback"><img src="linkedin.png"></a></p> -->
@@ -191,7 +192,8 @@
     </div><hr>
   </div>
   </div>
- 
+  
+
 </div>
 </body>
 </html>
