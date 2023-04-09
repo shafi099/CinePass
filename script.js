@@ -6,7 +6,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const nowshowing= document.getElementById("nowshowing");
   const comingsoon= document.getElementById("comingsoon");
   const browsebtns=document.querySelectorAll(".browsebtns");
-  
+  const bookingbox = document.getElementById("bookingbox");
+  const bookingboxdupli=bookingbox.innerHTML;
 
   citybtns.forEach(btn => {
     btn.onclick = () => {
@@ -34,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
       section.scrollIntoView({behavior: "smooth"});
     }
     else{
-      var bookingbox = document.getElementById("bookingbox");
       var usesearch = document.getElementById("usesearch")
       //var section = document.getElementById("toggles")
       moviehead.scrollIntoView({behavior: "smooth"});
@@ -44,14 +44,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   nowshowing.onclick = () => {
-    location.reload();
-    setTimeout(() => {
-      moviehead.scrollIntoView({ behavior: "smooth" });
-    }, 4000); // waits for 1 second before scrolling
+    var togglemsg= document.getElementById("usesearch");
+    togglemsg.innerText="**FIND YOUR FAVORITE MOVIE NAME or USE THE SEARCH BAR OR BROWSE THE OPTIONS BELOW **"
+    
+    bookingbox.innerHTML= bookingboxdupli;
   }
   
   comingsoon.onclick = () => {
-    var bookingbox = document.getElementById("bookingbox");
+
     var togglemsg= document.getElementById("usesearch");
     togglemsg.innerText="These movies are yet to be released. To view the currently showing movies, click on the 'Now Showing' button above"
     bookingbox.innerHTML= `  
