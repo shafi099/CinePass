@@ -1,3 +1,7 @@
+html{
+  scroll-padding-top: 52px;
+  scroll-behavior: smooth;
+}
 body{
   background-color: #2e2e2e;
   margin: 0px;
@@ -126,7 +130,7 @@ z-index: 9999;
 .contactbox a:hover{
   font-size: 18px;
   font-weight: bold;
-  color:#d9b138;
+  color:white;
   text-decoration: none;
   
 }
@@ -284,6 +288,8 @@ border-radius:0px 10px 10px 0px;
 border-color: #f2f2f2;
 background-color: #8a1200;
 color: white;
+
+
 }
 
 .bookingbox{
@@ -297,7 +303,14 @@ justify-content: center;
 align-items: center;
 
 }
-
+#togglemsg{
+  font-family: Abeezee;
+  font-size: lighter;
+  font-size: 12px;
+  color:grey;  
+  text-align: center;
+  padding-top: 12px;
+}
 .booking a{
 text-decoration: none;
 }
@@ -353,11 +366,12 @@ font-size: 18px;
 padding: 7px;
 }
 .usesearch{
-font-size: 10px;
+font-size: 14px;
 font-family: 'Share Tech Mono', monospace;
 text-align:center;
 padding-top:24px;
 color:grey;
+text-align: center;
 }
 
 .footer{
@@ -366,7 +380,7 @@ height:100%;
 width:100%;
 background-color: #8a1200;
 text-align:center;
-font-family: ;
+
 }
 .footer p{
 padding-top:24px;
@@ -400,14 +414,17 @@ gap: 0px;
 .feedbacksection input{
 margin:12px;
 background: #831201;
-height:100px;width:30%;
+height:26px;width:15%;
 text-align: center;
 border-radius: 8px 8px 8px 8px;
 border-style: solid;
 border-color: #fca294;
+transition: 0.3s;
 }
-.feedbacksection input:hover{
+.feedbacksection input:focus{
 box-shadow: 0 0 6px rgba(33,33,33,.2); 
+height:100px;width:50%;
+overflow: auto;
 }
 .feedbacksection button{
 height:27.29px;padding: 3px 12px 3px 12px;
@@ -489,6 +506,10 @@ text-decoration-line: underline;
     }
   }
 @media all and (max-width:480px) {
+  html{
+    scroll-padding-top: 35px;
+    scroll-behavior: smooth;
+  }
   body{
   background-color: #2e2e2e;
   margin: 0px;
@@ -508,7 +529,7 @@ text-decoration-line: underline;
   top: 0px;
   background-color: transparent;
   margin-top: 0px;
-  height: 45px;
+  height: 35px;
   width: 100%;
   gap: 1px;
   position: fixed;
@@ -565,7 +586,7 @@ padding-top: 6px;;
 .topnav input{
   border:none;
   background:#f2f2f2;
- width:50%;
+ width:42%;
   padding-left:6px;
   padding-right:4px;
   padding-top: 0px;
@@ -573,6 +594,10 @@ padding-top: 6px;;
   outline:none;
   /* text-align: left; */
 }
+.topnav input:hover{
+width: 50%;
+}
+
 .topnav input::placeholder{
   
   color:grey;
@@ -593,6 +618,10 @@ padding-top: 6px;;
   background-color: #8a1200;
   color: white;
 }
+.searchicon{
+  height:16px;
+  width: 16px;;
+}
 .inputbox input:hover {
   box-shadow: 0 0 6px rgba(33,33,33,.2); 
 }
@@ -601,6 +630,7 @@ padding-top: 6px;;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-right:6px;
 }
 .contactbox a{
   padding-right:6px;
@@ -610,6 +640,13 @@ padding-top: 6px;;
   font-size: 8px; font-style: normal;
   font-variant: normal;
   font-weight: 400;
+}
+.contactbox a:hover{
+  font-size: 12px;
+  font-weight: bold;
+  color:#d9b138;
+  text-decoration: none;
+  
 }
 .aboutbox{
   background-color: transparent;
