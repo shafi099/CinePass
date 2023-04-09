@@ -1,0 +1,249 @@
+html{
+    scroll-padding-top: 52px;
+    scroll-behavior: smooth;
+    
+    
+  }
+  /* .upper{
+    
+    background-position: left top;
+    background-size: 150%;
+    backdrop-filter: blur(100px);
+  } */
+  body{
+    background-color: #2e2e2e;
+    margin: 0px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  input {
+    font-family: 'Share Tech Mono', monospace;
+    font-size:14px;
+  }
+  /* .upper{
+    background-image: url("aboutboxbg.jpg");
+    background-position: left top;
+    background-size: 150%;
+  } */
+  .topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  width: 100%;
+  z-index: 9999;
+    background-color:transparent;
+    margin-top: 0px;
+    height: 52px;
+    width: 100%;
+    gap: 36px;
+    backdrop-filter: blur(3px);
+  
+}
+  
+  .cinepass{
+   
+    justify-content: center;
+    align-items: middle;
+    text-align: center;
+  }
+  .icon{
+    height:20.94px;
+    width:41.22px;
+    padding-left:px;
+  }
+  /*.cinepasstextbox{
+    gap:0px;
+  }
+  .cinepasstextCP{
+    font-family: "Holtwood One SC"; 
+    font-size: 24px; 
+    font-style: italic; 
+    font-variant:small-caps;
+    font-weight: 50;
+    line-height: 26.4px;
+    color:#8a1200;
+  }*/
+  .cinepasstext{
+    font-family: "Holtwood One SC"; 
+    font-size: 24px; 
+    font-style: italic; 
+    font-variant:small-caps;
+    font-weight: 50;
+    line-height: 26.4px;
+    color: white;
+    text-shadow: 1px 1px 0px #d9b138;
+  }
+  
+  .contactbox{
+    backdrop-filter: blur(3px);
+    justify-content: center;
+    text-align: center;
+    transition: 0.2s;    
+    
+  }
+  .contactbox a{
+    padding-right:26px;
+    text-decoration: none;
+    color:white;
+    font-family: Quicksand;
+    font-size: 14px; font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 23px; 
+    transition: 0.2s;
+    
+  }
+  .contactbox a:hover{
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    text-decoration: none;
+    
+  }
+
+.moviebox{
+    padding: 62px 150px 0px 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000069;
+    backdrop-filter: blur(5px);
+}
+
+.imagebox img{
+    height:260px;
+    width:200px;
+    border-style: double;
+    border-color: white;
+}
+.moviedetails{
+    display: grid;
+    align-items: start;
+    padding-left: 24px;
+}
+.moviedetails span{
+    padding: 10px;
+    font-family: Quicksand;
+    color: white;
+}
+
+@media all and (max-width:873px){
+html{
+    scroll-padding-top: 52px;
+    scroll-behavior: smooth;
+    
+    
+  }
+  body{
+    background-color: #2e2e2e;
+    margin: 0px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  input {
+    font-family: 'Share Tech Mono', monospace;
+    font-size:14px;
+  }
+
+  .topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  width: 100%;
+  z-index: 9999;
+    background-color:transparent;
+    margin-top: 0px;
+    height: 42px;
+    width: 100%;
+    gap: 36px;
+    backdrop-filter: blur(3px);
+  
+}
+  
+  .cinepass{
+   
+    justify-content: center;
+    align-items: middle;
+    text-align: center;
+  }
+  .icon{
+    height:20.94px;
+    width:41.22px;
+    padding-left:0px;
+  }
+  /*.cinepasstextbox{
+    gap:0px;
+  }
+  .cinepasstextCP{
+    font-family: "Holtwood One SC"; 
+    font-size: 24px; 
+    font-style: italic; 
+    font-variant:small-caps;
+    font-weight: 50;
+    line-height: 26.4px;
+    color:#8a1200;
+  }*/
+  .cinepasstext{
+    font-family: "Holtwood One SC"; 
+    font-size: 24px; 
+    font-style: italic; 
+    font-variant:small-caps;
+    font-weight: 50;
+    line-height: 26.4px;
+    color: white;
+    text-shadow: 1px 1px 0px #d9b138;
+  }
+  
+.contactbox{
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     /* padding-right:6px; */
+   }
+   .contactbox a{
+     padding-right:6px;
+     text-decoration: none;
+     color:white;
+     font-family: Quicksand;
+     font-size: 9px; font-style: normal;
+     font-variant: normal;
+     font-weight: 400;
+   }
+   .contactbox a:hover{
+     font-size: 16px;
+     font-weight: bold;
+     color:white;
+     text-decoration: none;
+     
+   }
+
+.moviebox{
+    padding: 52px 6px 0px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00000069;
+    backdrop-filter: blur(5px);
+}
+
+.imagebox img{
+    height:195px;
+    width:150px;
+    border-style: double;
+    border-color: white;
+}
+.moviedetails{
+    display: grid;
+    align-items: start;
+    padding-left: 4px;
+}
+.moviedetails span{
+    padding: 4px;
+    font-family: Quicksand;
+    color: white;
+    font-size: 10px;
+}
+}
