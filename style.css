@@ -591,9 +591,6 @@ padding-top: 6px;;
   width: 102px;
 }
 
-
-
-
 .topnav input{
   border:none;
   background:#f2f2f2;
@@ -689,6 +686,41 @@ height:27px;
 width:27px;
 transition: 0.2s;
 }
+
+.citybox{
+  margin-top: 16px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center ;
+  }
+  .searchinptbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center ;
+  }
+  .citybox input{
+    height:15px;
+  border:none;
+  background:#f2f2f2;
+  width:220px;
+  padding:3px 6px 3px 6px;
+  border-radius: 3px 0px 0px 3px;
+  outline:none;
+  }
+  .citybox input:hover {
+  box-shadow: 0 0 6px rgba(33,33,33,.2); 
+  }
+  .citybox input::placeholder{
+  color:grey;
+  font-family: Quicksand;
+  font-size: 12px; font-style: normal;
+  font-variant: normal;
+  font-weight: 400;text-align: center ;
+  }
+ 
+ 
 .submitt{    
 height:auto;
 color:grey;
@@ -697,7 +729,10 @@ font-family: Quicksand;
 font-size: 12px; 
 border-radius: 0px 3px 3px 0px;
 }
-
+ .submitt:hover {
+    background-color: #8a1200;
+    color: white;
+    }
 
 .bookingbox{
   padding: 0px;
