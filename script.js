@@ -46,8 +46,11 @@ document.addEventListener('DOMContentLoaded', () => {
   nowshowing.onclick = () => {
     var togglemsg= document.getElementById("usesearch");
     togglemsg.innerText="**FIND YOUR FAVORITE MOVIE NAME or USE THE SEARCH BAR OR BROWSE THE OPTIONS BELOW **"
-    
     bookingbox.innerHTML= bookingboxdupli;
+    nowshowing.classList.remove("comingsoon");
+    nowshowing.classList.add("nowshow");
+    comingsoon.classList.remove("nowshow");
+    comingsoon.classList.add("comingsoon");
   }
   
   comingsoon.onclick = () => {
@@ -74,7 +77,10 @@ document.addEventListener('DOMContentLoaded', () => {
       <button class="booknow">soon</button>
     </div>
   `;
-
+  nowshowing.classList.remove("nowshow");
+  nowshowing.classList.add("comingsoon");
+  comingsoon.classList.remove("comingsoon");
+  comingsoon.classList.add("nowshow");;
   }
 
 
