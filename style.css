@@ -257,7 +257,7 @@ justify-content: center;
 align-items: center;
 }
 .toggle {
-background-color: #8a1200; /* Green */
+background-color: #8a1200; 
 border: none;
 color: white;
 padding: 8px;
@@ -272,26 +272,17 @@ cursor: pointer;
 .nowshow {
 background: #8a1200; 
 color: white; 
-border: 2px solid #8a1200;border-radius:10px 0px 0px 10px;
+border:10px 0px 0px 10px; 
 }
-
-
 .comingsoon{
 background: #f2f2f2;
 color:#8a1200;
-border-width: 1px 1px 1px 0px;
-border-style:  solid ;
-border-color:#f2f2f2;
-border-radius:0px 10px 10px 0px;
 }
 .comingsoon:hover {
 border-color: #f2f2f2;
 background-color: #8a1200;
 color: white;
-
-
 }
-
 .bookingbox{
 padding-right:15%;padding-left:15%;
 margin: 18px 12px 18px 12px;
@@ -351,6 +342,7 @@ background-color: #ddd;
 border: none;
 color: black;
 padding: 8px;
+width:98%;
 text-align: center;
 font-size: 16px;
 margin: 4px 2px;
@@ -769,6 +761,7 @@ width: 156.666667px;
 border-radius:6px;
 padding-top:2px;
 }
+
 .movietitle{
 font-family:'Prompt', sans-serif;
 font-size: 600;
@@ -782,6 +775,7 @@ font-size: 300;
 color:#363636;
 font-size: 12px;
 }
+.box1
 .booknow{
 background-color: #ddd;
 border: none;
@@ -799,6 +793,7 @@ font-family: 'Share Tech Mono', monospace;
 background-color: #8a1200;
 color: white;
 }
+
 .usesearch{
 font-size: 10px;
 font-family: 'Share Tech Mono', monospace;
@@ -813,7 +808,6 @@ background-color: #8a1200;
 }
 
 .footer a{
-padding-
 font-size: 18px;
 font-family: 'Share Tech Mono', monospace;
 text-decoration: underline;
