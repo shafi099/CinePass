@@ -249,8 +249,114 @@ border-radius:6px;
     font-size: 18px;
     padding: 7px;
     }
+    
 
-    @media all and (max-width:873px){
+.footer{
+  display: inline-block;
+  height:100%;
+  width:100%;
+  background-color: #8a1200;
+  text-align:center;
+  
+  }
+  .footer p{
+  padding-top:24px;
+  }
+  .footer a{
+  font-size: 18px;
+  font-family: 'Share Tech Mono', monospace;
+  text-decoration: none;
+  color:white;
+  padding-right:24px;
+  }
+  .footer img{
+  height:25px;
+  width:25px;
+  transition: 0.3s;
+  filter: brightness(100%) saturate(0%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+  }
+  .footer img:hover{
+  height:31px;
+  width:31px;
+  transition: 0.5s;
+  }
+  .feedbacksection{
+  font-family: 'Share Tech Mono', monospace;
+  text-align:center;
+  padding-top:16px;
+  color:white;
+  justify-content: center;
+  gap: 0px;
+  }
+  .feedbacksection input{
+  margin:12px;
+  background: #831201;
+  height:26px;width:15%;
+  text-align: center;
+  border-radius: 8px 8px 8px 8px;
+  border-style: solid;
+  border-color: #fca294;
+  transition: 0.3s;
+  }
+  .feedbacksection input:focus{
+  box-shadow: 0 0 6px rgba(33,33,33,.2); 
+  height:100px;width:50%;
+  overflow: auto;
+  }
+  .feedbacksection button{
+  height:27.29px;padding: 3px 12px 3px 12px;
+  color:grey;
+  border:none;
+  font-family: Quicksand;
+  font-size: 14px; font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
+  border-radius: 6px 6px 6px 6px;
+  margin-bottom:12px;
+  }
+  .feedbacksection button:hover{
+  background-color: #530b00;
+  color: white;
+  }
+  .footerlinks{
+  margin: 18px 180px 18px 180px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  display:flex;
+  flex-wrap: wrap;
+  gap:16px;
+  justify-content: center;
+  font-family: 'Share Tech Mono', monospace;
+  color:lightgrey;
+  font-size:16px;
+  }
+  .browseall{
+  width:262px;
+  height:230px;
+  background-color: #8a1200;
+  display: grid;gap: 0px;
+  justify-content: center;
+  align-items: middle;
+  text-align: center;
+  border-radius:6px;
+  }
+  .browseall p{
+  font-size:16px;
+  text-align: center;
+  }
+  
+  .browseall a{
+  font-size:12px;
+  text-decoration-line: underline;
+  transition: 0.3s;}
+  .browseall a:hover{
+    font-size:16px;
+    text-decoration-line: underline;
+    }
+  
+
+@media all and (max-width:573px){
 
 html{
   scroll-padding-top: 52px;
@@ -310,7 +416,7 @@ z-index: 9999;
 }*/
 .cinepasstext{
   font-family: "Holtwood One SC"; 
-  font-size: 24px; 
+  font-size: 21px; 
   font-style: italic; 
   font-variant:small-caps;
   font-weight: 50;
@@ -460,10 +566,10 @@ z-index: 9999;
 .book button{
   padding:5px;
   margin:1px;
-  height:25px;width:25px;
+  height:14px;width:14px;
   background: transparent;
   border-style: solid;
-  border-radius: 5px;
+  border-radius: 3px;
   border-width: 1px;
   border-color: #d9b138;
 }
@@ -490,24 +596,21 @@ border-radius:6px;
 .seatnos{
   font-family: Quicksand;
   color:#ddd;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bolder;
   padding-right: 8px;
   padding-left: 8px; 
 }
 
 .booknow{
+  margin-left: 123px;
+    margin-right: 0px;
+    
   background-color: #ddd;
   border: none;
   color: black;
-  padding: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  padding: 4px 8px 4px 8px;
   font-size: 16px;
-   margin-left:4px;
-  margin-right:4px; */
   transition: 0.2s;
   border-radius: 6px;
   text-decoration:none;
@@ -520,5 +623,87 @@ border-radius:6px;
   color: white;
   font-size: 16px;
   padding: 7px;
+  }
+  
+.footer{
+  height:100%;
+  width:100%;
+  background-color: #8a1200; 
+  }
+  
+  .footer a{
+  font-size: 18px;
+  font-family: 'Share Tech Mono', monospace;
+  text-decoration: underline;
+  color:white;
+  }
+  .feedbacksection{
+  font-family: 'Share Tech Mono', monospace;
+  text-align:center;
+  padding-top:16px;
+  color:white;
+  justify-content: center;
+  gap: 0px;
+  }
+  .feedbacksection input{
+  margin:12px;
+  background: #831201;
+  height:30px;width:60%;
+  text-align: center;
+  border-radius: 8px 8px 8px 8px;
+  border-style: solid;
+  border-color: #fca294;
+  }
+  .feedbacksection input:hover{
+  box-shadow: 0 0 6px rgba(33,33,33,.2);
+  height:100px;width:60%; 
+  }
+  .feedbacksection button{
+  height:27.29px;padding: 3px 12px 3px 12px;
+  color:grey;
+  border:none;
+  font-family: Quicksand;
+  font-size: 14px; font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
+  border-radius: 6px 6px 6px 6px;
+  margin-bottom:12px;
+  }
+  .feedbacksection button:hover{
+  background-color: #530b00;
+  color: white;
+  }
+  .footerlinks{
+  text-align: center;
+  margin: 18px 180px 18px 180px;
+  transition-duration: 0.2s;
+  cursor: pointer;
+  display:grid;
+  flex-wrap: wrap;
+  gap:16px;
+  justify-content: center;
+  font-family: 'Share Tech Mono', monospace;
+  color:lightgrey;
+  font-size:16px;
+  }
+  .browseall{
+  width:262px;
+  height:200px;
+  background-color: #8a1200;
+  display: grid;gap: 0px;
+  justify-content: center;
+  align-items: middle;
+  text-align: center;
+  border-radius:6px;
+  }
+  .browseall p{
+  font-size:16px;
+  text-align: center;
+  }
+  
+  .browseall a{
+  font-size:12px;
+  text-decoration-line: underline;
   }
     }
