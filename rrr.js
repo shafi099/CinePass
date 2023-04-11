@@ -36,7 +36,7 @@ tommorrow.onclick = () => {
   tommorrow.classList.add("today");
   today.classList.remove("today");
   today.classList.add("tommorrow");
-  const showtimings= `<a href="###">10.00AM</a> <a href="###">2.00PM</a> <a href="###">4.00PM</a> <a href="###">6.00PM</a>`;
+  const showtimings= `<a href="theatre.html">10.00AM</a> <a href="theatre.html">2.00PM</a> <a href="theatre.html">4.00PM</a> <a href="theatre.html">6.00PM</a>`;
   for (let i = 0; i < screentimes.length; i++) {
     screentimes[i].innerHTML=showtimings;
   }
@@ -50,13 +50,13 @@ tommorrow.onclick = () => {
       if (timingshow.length === 0) {
         screentimes[i].innerHTML = "No timings available for today";
       } else if (timingshow.length === 1) {
-        screentimes[i].innerHTML = `<a href="###">${timingshow[0] - 12}.00PM</a>`;
+        screentimes[i].innerHTML = `<a href="theatre.html">${timingshow[0] - 12}.00PM</a>`;
       } else if (timingshow.length === 2) {
-        screentimes[i].innerHTML = `<a href="###">${timingshow[0] - 12}.00PM</a> <a href="###">${timingshow[1] - 12}.00PM</a>`;
+        screentimes[i].innerHTML = `<a href="theatre.html">${timingshow[0] - 12}.00PM</a> <a href="theatre.html">${timingshow[1] - 12}.00PM</a>`;
       } else if (timingshow.length === 3) {
-        screentimes[i].innerHTML = `<a href="###">${timingshow[0] - 12}.00PM</a> <a href="###">${timingshow[1] - 12}.00PM</a> <a href="###">${timingshow[2] - 12}.00PM</a>`;
+        screentimes[i].innerHTML = `<a href="theatre.html">${timingshow[0] - 12}.00PM</a> <a href="theatre.html">${timingshow[1] - 12}.00PM</a> <a href="theatre.html">${timingshow[2] - 12}.00PM</a>`;
       } else {
-        screentimes[i].innerHTML = `<a href="###">${timingshow[0]}.00AM</a> <a href="###">${(timingshow[1] - 12)}.00PM</a> <a href="###">${timingshow[2] - 12}.00PM</a> <a href="###">${timingshow[3] - 12}.00PM</a>`;
+        screentimes[i].innerHTML = `<a href="theatre.html">${timingshow[0]}.00AM</a> <a href="theatre.html">${(timingshow[1] - 12)}.00PM</a> <a href="theatre.html">${timingshow[2] - 12}.00PM</a> <a href="theatre.html">${timingshow[3] - 12}.00PM</a>`;
       }
     };
   }
