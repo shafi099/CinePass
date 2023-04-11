@@ -48,7 +48,7 @@ tommorrow.onclick = () => {
   function todayshowtimings() {
     for (let i = 0; i < screentimes.length; i++) {
       if (timingshow.length === 0) {
-        screentimes[i].innerHTML = "No timings available for today";
+        screentimes[i].innerHTML = "\tNo timings available for today";
       } else if (timingshow.length === 1) {
         screentimes[i].innerHTML = `<a href="theatre.html">${timingshow[0] - 12}.00PM</a>`;
       } else if (timingshow.length === 2) {
