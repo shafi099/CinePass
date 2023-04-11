@@ -1,0 +1,524 @@
+html{
+    scroll-padding-top: 52px;
+    scroll-behavior: smooth;
+  }
+  body{
+    background-color: #2e2e2e;
+    margin: 0px;
+    -webkit-tap-highlight-color: transparent;
+  }
+  input {
+    font-family: 'Share Tech Mono', monospace;
+    font-size:14px;
+  }
+  .topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  width: 100%;
+  z-index: 9999;
+    background-color:transparent;
+    margin-top: 0px;
+    height: 52px;
+    width: 100%;
+    gap: 36px;
+    backdrop-filter: blur(3px);
+  }
+  .cinepass{
+   
+    justify-content: center;
+    align-items: middle;
+    text-align: center;
+  }
+  .icon{
+    height:20.94px;
+    width:41.22px;
+    padding-left:px;
+  }
+  .cinepasstext{
+    font-family: "Holtwood One SC"; 
+    font-size: 24px; 
+    font-style: italic; 
+    font-variant:small-caps;
+    font-weight: 50;
+    line-height: 26.4px;
+    color: white;
+    text-shadow: 1px 1px 0px #d9b138;
+  }
+  
+  .contactbox{
+    backdrop-filter: blur(3px);
+    justify-content: center;
+    text-align: center;
+    transition: 0.2s;    
+    
+  }
+  .contactbox a{
+    padding-right:26px;
+    text-decoration: none;
+    color:white;
+    font-family: Quicksand;
+    font-size: 14px; font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 23px; 
+    transition: 0.2s;
+    
+  }
+  .contactbox a:hover{
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    text-decoration: none;
+  }
+  
+  .backbox{
+    margin-top: 52px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    padding-left:210px;
+  }
+  .backbox button{
+    /* width:200px; */
+    background: #2e2e2e;
+    border: none;
+  }
+  .backbox img{
+    height:25px;width:25px;
+    transition: 0.3s;
+  }
+  .backbox img:hover {
+    height:30px;width:30px;
+  }
+  .backbox span{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Quicksand;
+    color:#ddd;
+    padding-top: 3px;
+  }
+  .selectseatsnum{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    top:83px;
+    padding-top:24px;
+  }
+  .plusminusbox{
+    display: flex;
+    justify-content: center;
+  }
+  .selectseatsnumtext{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: Quicksand;
+    color:#ddd;
+    display: flex;
+    padding-bottom: 8px; 
+  }
+  .price{
+    font-family: Quicksand;
+    color:#ddd;
+    padding-top:0px;
+  
+    display: grid;
+    text-align: center;
+  }
+  .pricecost{
+    font-family: Quicksand;
+    color:#d9b138;
+    font-size:18px;
+    font-size: 26px;
+    font-weight: bold;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  #plusminusresult{
+    font-family: Quicksand;
+    color:#ddd;
+    font-size: 24px;
+    font-weight: bolder;
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+  #plus, #minus{
+    font-family: Quicksand;
+    font-size: 18px;
+    color:#8a1200;
+    font-weight: bolder;
+    background: #d9b138;
+    border-style: none;
+    border-radius:50%;
+    height:30px;width:30px;
+    transition: 0.2s;
+  }
+  #plus:hover, #minus:hover{
+    height:32px;width:32px;
+  }
+  #maxminlimittext{
+    margin-top: 6px;;
+    font-family: Quicksand;
+    color:#ddd;
+    font-weight: bolder;
+  }
+  .book{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+  }
+  .ticketbooktext{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-family: Quicksand;
+    color:#ddd;
+    padding-bottom:4px;
+  }
+  .upperclass{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .book button{
+    padding:5px;
+    margin:1px;
+    height:25px;width:25px;
+    background: transparent;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #d9b138;
+  }
+  .book button:hover{
+    background: #d9b138;
+  }
+  .silverscreen{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    font-family: Quicksand;
+    color:#d9b138;
+    margin-top:24px;
+   margin-left:510px;
+   margin-right:510px;
+    border-style: solid;
+    border-color: #ddd;
+border-width:1px;
+padding:3px;
+border-radius:6px;
+  }
+
+.seatnos{
+    font-family: Quicksand;
+    color:#ddd;
+    font-size: 24px;
+    font-weight: bolder;
+    padding-right: 8px;
+    padding-left: 8px; 
+}
+
+.booknow{
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+     margin-left:640px;
+    margin-right:510px; */
+    transition: 0.2s;
+    border-radius: 6px;
+    text-decoration:none;
+    font-family: Quicksand;
+    
+    }
+    
+    .booknow:hover {
+    background-color: #d9b138;
+    color: white;
+    font-size: 18px;
+    padding: 7px;
+    }
+
+    @media all and (max-width:873px){
+
+html{
+  scroll-padding-top: 52px;
+  scroll-behavior: smooth;
+  
+  
+}
+body{
+  background-color: #2e2e2e;
+  margin: 0px;
+  -webkit-tap-highlight-color: transparent;
+}
+input {
+  font-family: 'Share Tech Mono', monospace;
+  font-size:14px;
+}
+
+.topnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+
+z-index: 9999;
+  background-color:transparent;
+  margin-top: 0px;
+  height: 42px;
+  width: 100%;
+  gap: 36px;
+  backdrop-filter: blur(3px);
+
+}
+
+.cinepass{
+ 
+  justify-content: center;
+  align-items: middle;
+  text-align: center;
+}
+.icon{
+  height:20.94px;
+  width:41.22px;
+  padding-left:0px;
+}
+/*.cinepasstextbox{
+  gap:0px;
+}
+.cinepasstextCP{
+  font-family: "Holtwood One SC"; 
+  font-size: 24px; 
+  font-style: italic; 
+  font-variant:small-caps;
+  font-weight: 50;
+  line-height: 26.4px;
+  color:#8a1200;
+}*/
+.cinepasstext{
+  font-family: "Holtwood One SC"; 
+  font-size: 24px; 
+  font-style: italic; 
+  font-variant:small-caps;
+  font-weight: 50;
+  line-height: 26.4px;
+  color: white;
+  text-shadow: 1px 1px 0px #d9b138;
+}
+
+.contactbox{
+  display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   /* padding-right:6px; */
+ }
+ .contactbox a{
+   padding-right:6px;
+   text-decoration: none;
+   color:white;
+   font-family: Quicksand;
+   font-size: 12px; font-style: normal;
+   font-variant: normal;
+   font-weight: 400;
+ }
+ .contactbox a:hover{
+   font-size: 16px;
+   font-weight: bold;
+   color:white;
+   text-decoration: none;
+   
+ }
+  
+ .backbox{
+  margin-top: 52px;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  padding-left:12px;
+}
+.backbox button{
+  /* width:200px; */
+  background: #2e2e2e;
+  border: none;
+}
+.backbox img{
+  height:25px;width:25px;
+  transition: 0.3s;
+}
+.backbox img:hover {
+  height:30px;width:30px;
+}
+.backbox span{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: Quicksand;
+  color:#ddd;
+  padding-top: 3px;
+}
+.selectseatsnum{
+  
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top:83px;
+  padding-top:12px;
+}
+/* .plusminusbox{
+  display: flex;
+  justify-content: center;
+} */
+.selectseatsnumtext{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Quicksand;
+  color:#ddd;
+  display: flex;
+  padding-bottom: 8px; 
+}
+.price{
+  font-family: Quicksand;
+  color:#ddd;
+  padding-top:0px;
+
+  display: grid;
+  text-align: center;
+}
+.pricecost{
+  font-family: Quicksand;
+  color:#d9b138;
+  font-size:18px;
+  font-size: 26px;
+  font-weight: bold;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+#plusminusresult{
+  font-family: Quicksand;
+  color:#ddd;
+  font-size: 24px;
+  font-weight: bolder;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+#plus, #minus{
+  font-family: Quicksand;
+  font-size: 18px;
+  color:#8a1200;
+  font-weight: bolder;
+  background: #d9b138;
+  border-style: none;
+  border-radius:50%;
+  height:30px;width:30px;
+  transition: 0.2s;
+}
+#plus:hover, #minus:hover{
+  height:32px;width:32px;
+}
+#maxminlimittext{
+  margin-top: 6px;;
+  font-family: Quicksand;
+  color:#ddd;
+  font-weight: bolder;
+}
+.book{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  
+}
+.ticketbooktext{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-family: Quicksand;
+  color:#ddd;
+  padding-bottom:4px;
+}
+.upperclass{
+  display: flex; 
+   flex-wrap: wrap;
+  
+  gap: 20px;
+}
+.book button{
+  padding:5px;
+  margin:1px;
+  height:25px;width:25px;
+  background: transparent;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #d9b138;
+}
+.book button:hover{
+  background: #d9b138;
+}
+.silverscreen{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  text-align: center;
+  font-family: Quicksand;
+  color:#d9b138;
+  margin-top:24px;
+ margin-left:0px;
+ margin-right:6px;
+  border-style: solid;
+  border-color: #ddd;
+border-width:1px;
+padding:3px;
+border-radius:6px;
+}
+
+.seatnos{
+  font-family: Quicksand;
+  color:#ddd;
+  font-size: 24px;
+  font-weight: bolder;
+  padding-right: 8px;
+  padding-left: 8px; 
+}
+
+.booknow{
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+   margin-left:4px;
+  margin-right:4px; */
+  transition: 0.2s;
+  border-radius: 6px;
+  text-decoration:none;
+  font-family: Quicksand;
+  
+  }
+  
+  .booknow:hover {
+  background-color: #d9b138;
+  color: white;
+  font-size: 16px;
+  padding: 7px;
+  }
+    }

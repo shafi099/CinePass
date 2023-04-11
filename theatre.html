@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="theatre.css" >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+ <script src="theatre.js"></script>
+  
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Atomic+Age&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Sora:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Montserrat:ital,wght@1,600&family=Sora:wght@300&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+ </style>
+  <title>CinePass</title>
+</head>
+
+<body>
+  <div class="topnav" id="topnav">
+    <span class="cinepass">
+      <span ><img src="icon.png" alt="icon" class="icon"></span>
+      <span class="cinepasstext">CinePass</span>
+    </span>
+    
+    <span class="contactbox">
+      <a href="index.html" >HOME</a>
+      <a href="index.html" >MOVIES</a>
+      <a href="index.html" >CITY</a>
+      <a href="#feedback" >FEEDBACK</a>
+    </span>
+    
+  </div>
+<div class="backbox">
+    <button onclick="history.back();">
+        <img src="backicon.png" alt="backicon" class="backboximg">
+    </button>
+    <span>Back to select theatre</span>
+</div>
+
+    <div class="selectseatsnum">
+    <span class="selectseatsnumtext">Select no.of seats</span>
+    <span class="plusminusbox"> 
+        <!-- <button id="minus">-</button> -->
+        <span id="plusminusresult"></span>
+        <!-- <button id="plus">+</button> -->
+        
+    </span>
+    <span id="maxminlimittext"></span>
+    </div>
+    </div>
+    <br><br>
+<div class="price">
+    <span >Total Price</span>
+    <span class="pricecost" id="pricecost">₹ 0 /-</span>
+    <br>
+</div>
+
+<span class="ticketbooktext"> Balcony Boxes Price - 150/- Each</span>
+<div class="book">
+    <div class="upperclass">
+        
+        <div class="upperleft">
+        <button class="bookbtn" id="0" value="0"></button><button class="bookbtn" id="1" value="1"></button><button class="bookbtn" id="2" value="2"></button><button class="bookbtn" id="3" value="3"></button><button class="bookbtn" id="4" value="4"></button>
+        <br><button class="bookbtn" id="5" value="5"></button><button class="bookbtn" id="6" value="6"></button><button class="bookbtn" id="7" value="7"></button><button class="bookbtn" id="8" value="8"></button><button class="bookbtn" id="9" value="9"></button>
+        <br><button class="bookbtn" id="10" value="10"></button><button class="bookbtn" id="11" value="11"></button><button class="bookbtn" id="12" value="12"></button><button class="bookbtn" id="13" value="13"></button><button class="bookbtn" id="14" value="14"></button>
+        <br><button class="bookbtn" id="15" value="15"></button><button class="bookbtn" id="16" value="16"></button><button class="bookbtn" id="17" value="17"></button><button class="bookbtn" id="18" value="18"></button><button class="bookbtn" id="19" value="19"></button>
+        </div>
+        <div class="upperright">          
+        <button class="bookbtn" id="20" value="20"></button><button class="bookbtn" id="21" value="21"></button><button class="bookbtn" id="22" value="22"></button><button class="bookbtn" id="23" value="23"></button><button class="bookbtn" id="24" value="24"></button>
+        <br><button class="bookbtn" id="25" value="25"></button><button class="bookbtn" id="26" value="26"></button><button class="bookbtn" id="27" value="27"></button><button class="bookbtn" id="28" value="28"></button><button class="bookbtn" id="29" value="29"></button>
+        <br><button class="bookbtn" id="30" value="30"></button><button class="bookbtn" id="31" value="31"></button><button class="bookbtn" id="32" value="32"></button><button class="bookbtn" id="33" value="33"></button><button class="bookbtn" id="34" value="34"></button>
+        <br><button class="bookbtn" id="35" value="35"></button><button class="bookbtn" id="36" value="36"></button><button class="bookbtn" id="37" value="37"></button><button class="bookbtn" id="38" value="38"></button><button class="bookbtn" id="39" value="39"></button>
+        </div>
+    </div>
+</div>
+
+
+<span class="ticketbooktext"> Balcony Boxes Price - 90/- Each</span>
+<div class="book">
+    <div class="upperclass">
+        
+        <div class="upperleft">
+            <button class="bookbtn" id="40" value="40"></button><button class="bookbtn" id="41" value="41"></button><button class="bookbtn" id="42" value="42"></button><button class="bookbtn" id="43" value="43"></button><button class="bookbtn" id="44" value="44"></button>
+            <button class="bookbtn" id="45" value="45"></button><button class="bookbtn" id="46" value="46"></button><button class="bookbtn" id="47" value="47"></button><button class="bookbtn" id="48" value="48"></button><button class="bookbtn" id="49" value="49"></button>
+            <br>
+            <button class="bookbtn" id="50" value="50"></button><button class="bookbtn" id="51" value="51"></button><button class="bookbtn" id="52" value="52"></button><button class="bookbtn" id="53" value="53"></button><button class="bookbtn" id="54" value="54"></button>
+            <button class="bookbtn" id="55" value="55"></button><button class="bookbtn" id="56" value="56"></button><button class="bookbtn" id="57" value="57"></button><button class="bookbtn" id="58" value="58"></button><button class="bookbtn" id="59" value="59"></button>
+            <br>
+            <button class="bookbtn" id="60" value="60"></button><button class="bookbtn" id="61" value="61"></button><button class="bookbtn" id="62" value="62"></button><button class="bookbtn" id="63" value="63"></button><button class="bookbtn" id="64" value="64"></button>
+            <button class="bookbtn" id="65" value="65"></button><button class="bookbtn" id="66" value="66"></button><button class="bookbtn" id="67" value="67"></button><button class="bookbtn" id="68" value="68"></button><button class="bookbtn" id="69" value="69"></button>
+            <br>    
+            <button class="bookbtn" id="70" value="70"></button><button class="bookbtn" id="71" value="71"></button><button class="bookbtn" id="72" value="72"></button><button class="bookbtn" id="73" value="73"></button><button class="bookbtn" id="74" value="74"></button>
+            <button class="bookbtn" id="75" value="75"></button><button class="bookbtn" id="76" value="76"></button><button class="bookbtn" id="77" value="77"></button><button class="bookbtn" id="78" value="78"></button><button class="bookbtn" id="79" value="79"></button>
+            <br>
+        
+        </div>
+        <div class="upperright">  
+            <button class="bookbtn" id="85" value="85"></button><button class="bookbtn" id="86" value="86"></button><button class="bookbtn" id="87" value="87"></button><button class="bookbtn" id="88" value="88"></button><button class="bookbtn" id="89" value="89"></button>
+            <button class="bookbtn" id="90" value="90"></button><button class="bookbtn" id="91" value="91"></button><button class="bookbtn" id="92" value="92"></button><button class="bookbtn" id="93" value="93"></button><button class="bookbtn" id="94" value="94"></button>
+            <br>
+            <button class="bookbtn" id="95" value="95"></button><button class="bookbtn" id="96" value="96"></button><button class="bookbtn" id="97" value="97"></button><button class="bookbtn" id="98" value="98"></button><button class="bookbtn" id="99" value="99"></button>
+            <button class="bookbtn" id="100" value="100"></button><button class="bookbtn" id="101" value="101"></button><button class="bookbtn" id="102" value="102"></button><button class="bookbtn" id="103" value="103"></button><button class="bookbtn" id="104" value="104"></button>
+            <br>
+            <button class="bookbtn" id="105" value="105"></button><button class="bookbtn" id="106" value="106"></button><button class="bookbtn" id="107" value="107"></button><button class="bookbtn" id="108" value="108"></button><button class="bookbtn" id="109" value="109"></button>
+            <button class="bookbtn" id="110" value="110"></button><button class="bookbtn" id="111" value="111"></button><button class="bookbtn" id="112" value="112"></button><button class="bookbtn" id="113" value="113"></button><button class="bookbtn" id="114" value="114"></button>
+            <br>
+            <button class="bookbtn" id="115" value="115"></button><button class="bookbtn" id="116" value="116"></button><button class="bookbtn" id="117" value="117"></button><button class="bookbtn" id="118" value="118"></button><button class="bookbtn" id="119" value="119"></button>
+            <button class="bookbtn" id="120" value="120"></button><button class="bookbtn" id="121" value="121"></button><button class="bookbtn" id="122" value="122"></button><button class="bookbtn" id="123" value="123"></button><button class="bookbtn" id="124" value="124"></button>
+            <br>
+    </div>
+</div>
+</div>
+<div class="silverscreen">
+    SCREEN THIS WAY
+</div>
+
+<div class="selectseatsnum">
+    <span class="selectseatsnumtext">Selected seat numbers</span>
+    <span class="seatnos" id="seatnos"></span>
+</div>
+
+<button class="bookbox booknow">PROCEED</button>
+
+<span class="cinepasstext">created by SHAFI</span>
+<!--<a href="thankyou"><button class="bookbox booknow">PROCEED</button></a> -->
+  </body>
+  </html>
