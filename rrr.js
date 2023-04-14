@@ -48,13 +48,13 @@ tommorrow.onclick = () => {
   function todayshowtimings() {
     for (let i = 0; i < screentimes.length; i++) {
       if (timingshow.length === 0) {
-        screentimes[i].innerHTML = "\t\tNo timings available for today";
+        screentimes[i].innerHTML = "\tNo timings available for today";
       } else if (timingshow.length === 1) {
-        screentimes[i].innerHTML = `<a href="theatre.html">${timingshow[0] - 12}.00PM</a>`;
+        screentimes[i].innerHTML = ` <span class="nillshow" style="border: none;">10.00AM</span><span class="nillshow" style="border: none;">2.00PM</span><span class="nillshow" style="border: none;">6.00PM</span><a href="theatre.html">${timingshow[0] - 12}.00PM</a>`;
       } else if (timingshow.length === 2) {
-        screentimes[i].innerHTML = `<a href="theatre.html">${timingshow[0] - 12}.00PM</a> <a href="theatre.html">${timingshow[1] - 12}.00PM</a>`;
+        screentimes[i].innerHTML = `<span class="nillshow" style="border: none;">10.00AM</span><span class="nillshow" style="border: none;">2.00PM</span><a href="theatre.html">${timingshow[0] - 12}.00PM</a> <a href="theatre.html">${timingshow[1] - 12}.00PM</a>`;
       } else if (timingshow.length === 3) {
-        screentimes[i].innerHTML = `<a href="theatre.html">${timingshow[0] - 12}.00PM</a> <a href="theatre.html">${timingshow[1] - 12}.00PM</a> <a href="theatre.html">${timingshow[2] - 12}.00PM</a>`;
+        screentimes[i].innerHTML = `<span class="nillshow" style="border: none;">10.00AM</span><a href="theatre.html">${timingshow[0] - 12}.00PM</a> <a href="theatre.html">${timingshow[1] - 12}.00PM</a> <a href="theatre.html">${timingshow[2] - 12}.00PM</a>`;
       } else {
         screentimes[i].innerHTML = `<a href="theatre.html">${timingshow[0]}.00AM</a> <a href="theatre.html">${(timingshow[1] - 12)}.00PM</a> <a href="theatre.html">${timingshow[2] - 12}.00PM</a> <a href="theatre.html">${timingshow[3] - 12}.00PM</a>`;
       }
