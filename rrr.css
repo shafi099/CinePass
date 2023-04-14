@@ -148,13 +148,15 @@ color: #d9b138;
 padding: 24px 210px 10px 210px;
 display: grid;
 font-family: Quicksand;
-font-size: 20px;
+
 color: #ddd;
 align-items: center;
 text-align: left;
 }
 .theatrelist span{
 padding-right: 33px;
+margin-left:12px;
+font-size: 16px;
 }
 .box{
 padding-bottom: 14px;
@@ -162,6 +164,7 @@ padding-bottom: 14px;
 .screentime a{
 padding-right: 33px;
 padding-left:24px;
+border: 1px solid #d9b138;
 text-decoration: none;
 color: #ddd;
 font-size: 16px;
@@ -169,10 +172,18 @@ font-weight: 400;
 transition: 0.3s;
 }
 .screentime a:hover{
-color: #d9b138;
-font-size: 20px;
+background-color: #d9b138;
+color:white;
+font-size: 16px;
 font-weight: 600;
 }
+/* .nillshow{
+  border: none;
+} */
+.nillshow:hover{
+  background-color: #2e2e2e;
+}
+
 .theatrelist hr{
   width: 100%;
   border: none;
@@ -435,9 +446,9 @@ text-align: left;
 transition: 0.2s;
 }
 .today{
-color:white;
+color:#d9b138;
 padding-right: 24px;
-font-size:12px;
+font-size:16px;
 font-weight: bolder;
 font-family: Quicksand;
 
@@ -464,13 +475,18 @@ text-align: left;
 }
 .theatrelist span{
 padding-right: 0px;
+  padding-right: 6px;
+  margin-left:8px;
+  font-size: 10px;
+  
 }
 .box{
 padding-bottom: 12px;
 }
 .screentime a{
-padding-right: 0px;
-padding-left:12px;
+padding-right: 8px;
+border: 1px solid #d9b138;
+padding-left:8px;
 text-decoration: none;
 color: #ddd;
 font-size: 10px;
