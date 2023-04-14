@@ -494,7 +494,8 @@ font-weight: 400;
 transition: 0.3s;
 }
 .screentime a:hover{
-color: #d9b138;
+background-color: #d9b138;
+  color:white;
 font-size: 10px;
 font-weight: 600;
 }
